@@ -1,0 +1,137 @@
+/* Font import */
+
+/* Open Sans normal and bold */
+
+  @font-face {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+    }
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+    }
+
+    /* Source Sans Pro bold and semi-bold */
+
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGMzFoXZ-Kj537nB_-9jJhlA.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+    }
+    @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+    }
+    
+/* Universal styles */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+header {
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+}
+
+.site-container {
+    width: 960px;
+    margin: auto;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Header */
+
+header .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+    /* border: 1px solid black; */
+}
+
+.logo-container {
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+#logo-img-container {
+    height: 100%;
+    width: auto;
+    /* border: 1px solid black; */
+}
+
+#logo-img-container img {
+    height: 120%;
+    width: auto;
+}
+
+.logo-text {
+    font-family: "Source Sans Pro";
+    font-size: 1.25rem;
+}
+
+#colmar {
+    font-weight: 700;
+}
+
+#academy {
+    color: gray;
+}
+
+/* .desktop nav {
+    border: 1px solid black;
+} */
+
+nav span {
+    padding-left: 1rem;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 480px) {
+
+    .desktop.site-container {
+        display: none;
+    }
+
+    header .mobile {
+        height:100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 1px solid black; */
+    }
+
+}
+
+
+
