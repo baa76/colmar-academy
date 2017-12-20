@@ -182,15 +182,13 @@ nav span {
     border: 1px solid black; 
 }
 
+
 #start-here {
+    display: flex;
+    justify-content: center;
     background-color: black;
     width: 91%;
     padding: 0.75rem 0;
-}
-
-#start-here a {
-    display: flex;
-    justify-content: center;
     color: white;
     text-align: center;
     font-size: 1rem;
@@ -217,9 +215,6 @@ nav span {
     #start-here {
         background-color: hsl(0, 0%, 40%);
         width: 100%;
-    }
-
-    #start-here a {
         font-weight: 600;
     }
 
