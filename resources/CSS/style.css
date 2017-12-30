@@ -40,7 +40,7 @@
         src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format('woff2');
         unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
     }
-    
+
 /* Universal styles */
 
 html {
@@ -64,9 +64,13 @@ header {
     border-bottom: 1px solid black;
 }
 
+.main-site-container {
+    position: relative;
+    top: 4rem;
+}
+
 .site-container {
-    width: 960px;
-    border: 1px solid black;
+    width: 1024px;
     margin: auto;
 }
 
@@ -81,7 +85,6 @@ header .desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
 }
 
 .logo-container {
@@ -89,13 +92,11 @@ header .desktop {
     display: flex;
     align-items: center;
     padding-left: 1.5rem;
-    border: 1px solid black;
 }
 
 #logo-img-container {
     height: 100%;
     width: auto;
-    border: 1px solid black;
 }
 
 #logo-img-container img {
@@ -118,7 +119,6 @@ header .desktop {
 
 .desktop nav {
     padding-right: 1.5rem;
-    border: 1px solid black;
 }
 
 nav span {
@@ -139,7 +139,13 @@ nav span {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        border: 1px solid black;
+    }
+
+    .mobile-logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
     }
 
 }
@@ -147,8 +153,6 @@ nav span {
 /* Banner */
 
 .banner {
-    position: relative;
-    top: 4rem; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,12 +163,11 @@ nav span {
     width: 60%;
     height: auto;
     padding: 2rem 1.5rem;
-    border: 1px solid black; 
 }
 
 .rhs-container {
+    margin-right: 3rem;
     padding: 2rem 1rem;
-    border: 1px solid black; 
 }
 
 .rhs-container h1 {
@@ -172,22 +175,19 @@ nav span {
     font-size: 2rem;
     line-height: 1.25;
     margin-bottom: 2rem;
-    border: 1px solid black; 
 }
 
 .rhs-container h3 {
     font-weight: 600;
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    border: 1px solid black; 
 }
-
 
 #start-here {
     display: flex;
     justify-content: center;
     background-color: black;
-    width: 91%;
+    width: 100%;
     padding: 0.75rem 0;
     color: white;
     text-align: center;
@@ -198,8 +198,6 @@ nav span {
 
 @media only screen and (max-width:760px) {
     .banner.site-container {
-        position: relative;
-        top: 4rem; 
         width:100%;
         display: flex;
         flex-direction: column;
@@ -209,7 +207,7 @@ nav span {
         width: 100%;
         height: auto;
         padding: 0;
-        border: 1px solid black; 
+
     }
 
     #start-here {
@@ -218,7 +216,134 @@ nav span {
         font-weight: 600;
     }
 
+    .rhs-container {
+        margin-right: 0;
+    }
 }
 
+/* Information */
+
+.information {
+    display: flex;
+}
+
+.main-image-container {
+    width: 60%;
+    height: auto;
+    padding: 2rem 1.5rem;
+}
+
+.main-image-container img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+}
+
+.main-image-container h1 {
+    font-weight: 900;
+    font-size: 1.875rem;
+}
+
+.main-image-container p {
+    font-size: .875rem;
+    padding-top: 1.5rem;
+}
+
+.main-image-container h5 {
+    font-size: .65rem;
+    padding-top: 1.5rem;
+    font-weight: 600;
+}
+
+.info-panel-container {
+    width: 34.65%;
+    padding-top: 1rem;
+}
+
+.info-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-panel .text-container {
+    width:65%;
+}
+
+.info-panel .image-container {
+    width: 35%;
+    padding: 1rem;
+}
+
+.info-panel img {
+    width: 100%;
+}
+
+.info-panel .text-container h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.info-panel .text-container p {
+    font-size: .775rem;
+    padding: .5rem 0;
+}
+
+.info-panel .text-container a {
+    font-size: .775rem;
+    color: rgb(0, 140, 255);
+}
+
+/* #guest-lecture {
+    background-color: lightgrey;
+} */
+
+/* Mobile */
+
+@media only screen and (max-width:760px) {
+
+    .desktop.main-image-container {
+        display: none;
+    }
+
+    .information.site-container {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info-panel .desktop.image-container {
+        display: none;
+    }
+
+    .info-panel .mobile.image-container {
+        display: block;
+    }
+
+    .info-panel .text-container {
+        width:100%;
+        padding-left: 1rem;
+    }
+
+    .info-panel .image-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .info-panel-container {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .info-panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+
+}
 
 
