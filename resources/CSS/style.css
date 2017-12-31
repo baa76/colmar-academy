@@ -312,37 +312,119 @@ nav span {
         flex-direction: column;
     }
 
+    .info-panel {
+        display: block;
+        padding: 1rem;
+    }
+
+    .info-panel-container {
+        width: 100%;
+        padding: 0;
+    }
+
     .info-panel .desktop.image-container {
         display: none;
     }
 
     .info-panel .mobile.image-container {
         display: block;
-    }
-
-    .info-panel .text-container {
-        width:100%;
-        padding-left: 1rem;
-    }
-
-    .info-panel .image-container {
         width: 100%;
         padding: 0;
     }
 
-    .info-panel-container {
-        width: 100%;
-        padding-top: 0;
-    }
-
-    .info-panel {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .info-panel .text-container {
+        width: auto;
         padding: 1rem;
     }
+}
 
+
+
+/* Learning */
+
+.learning {
+    background-color: lightgrey;
+}
+
+.learning h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.25;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 3.5rem 2rem 3.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.courses-container {
+    width: 17rem;
+    margin: 1rem;
+    background-color: white;
+}
+
+.courses-container img {
+    width: 100%;
+    height: auto;
+}
+
+.courses-container .text-container {
+    padding: 1rem;
+}
+
+.courses-container .text-container h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.courses-container .text-container p {
+    font-size: .775rem;
+    padding: .5rem 0;
+}
+
+/* Mobile */
+
+@media only screen and (max-width:760px) {
+
+    .learning.site-container {
+        width: auto;
+        padding: 2rem 0;
+        background-color: white;
+    }
+
+    .learning h1 {
+        padding: 0 0 .75rem 0;
+    }
+
+    .courses {
+        display: block;
+        /* flex-direction: column; */
+        padding: 0;
+    }
+
+    .courses-container {
+        width: auto;
+        margin: 0;
+        padding: .25rem .5rem;
+    }
+
+    .courses-container .desktop {
+        display: none;
+    }
+
+    .courses-container .text-container {
+        background-color: lightgrey;
+        padding: 0;
+    }
+
+    .courses-container .text-container h3 {
+        padding: 1rem;
+    }
 
 }
 
