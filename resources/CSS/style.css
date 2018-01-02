@@ -53,15 +53,9 @@ body {
     line-height: 1.4;
 }
 
-header {
-    height: 64px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
+h3 {
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 .main-site-container {
@@ -79,6 +73,16 @@ header {
 }
 
 /* Header */
+header {
+    height: 64px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
 
 header .desktop {
     max-width:100%;
@@ -159,10 +163,14 @@ nav span {
     background-color: lightgrey;
 }
 
-.banner img {
-    width: 60%;
-    height: auto;
+.banner .image-container {
+    flex: 0 0 60%;
     padding: 2rem 1.5rem;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
 }
 
 .rhs-container {
@@ -228,8 +236,7 @@ nav span {
 }
 
 .main-image-container {
-    width: 60%;
-    height: auto;
+    flex: 0 0 60%;
     padding: 2rem 1.5rem;
 }
 
@@ -256,32 +263,28 @@ nav span {
 }
 
 .info-panel-container {
-    width: 34.65%;
     padding-top: 1rem;
 }
 
 .info-panel {
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 1rem;
+    border-bottom: .5px solid lightgrey;
 }
 
 .info-panel .text-container {
-    width:65%;
+    flex:1 1 65%;
+    padding-left: 1rem;
 }
 
 .info-panel .image-container {
-    width: 35%;
-    padding: 1rem;
+    flex: 0 0 35%;
 }
 
 .info-panel img {
     width: 100%;
-}
-
-.info-panel .text-container h3 {
-    font-weight: 600;
-    font-size: 1.2rem;
+    height: auto;
 }
 
 .info-panel .text-container p {
@@ -403,7 +406,6 @@ nav span {
 
     .courses {
         display: block;
-        /* flex-direction: column; */
         padding: 0;
     }
 
@@ -428,4 +430,51 @@ nav span {
 
 }
 
+/* exhibit */
 
+.exhibit h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.25;
+    padding: 2rem 0 1rem 0;
+    text-align: center;
+}
+
+.content-container {
+    display: flex;
+    /* padding-top: 1rem; */
+}
+
+.video-container {
+    flex: 0 0 60%;
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+}
+
+.video-container p {
+    font-size: .875rem;
+    padding-top: 1rem;
+}
+
+.content-container .info-panel-container {
+    padding-top: 0;
+}
+
+@media only screen and (max-width:760px) {
+    .exhibit .desktop {
+        display: none;
+    }
+    .exhibit.site-container {
+        width: auto;
+    }
+
+    .video-container {
+        flex: 0 0 100%;
+        padding: 0 0 0.5rem 0rem;
+    }
+}
