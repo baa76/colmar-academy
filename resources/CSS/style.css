@@ -478,3 +478,19 @@ nav span {
         padding: 0 0 0.5rem 0rem;
     }
 }
+
+/* Footer */
+
+.footer-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .75rem;
+    padding: 1rem 1.5rem;
+}
+
+@media screen only and (max-width: 760px) {
+    .desktop {
+        display: none;
+    }
+}
