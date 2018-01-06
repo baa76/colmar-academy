@@ -129,6 +129,15 @@ nav span {
     padding-left: 1rem;
 }
 
+nav a {
+    transition-property: all;
+    transition-duration: 300ms;
+}
+
+nav a:hover {
+    color:  rgb(83, 120, 150);
+}
+
 /* Mobile */
 
 @media only screen and (max-width: 760px) {
@@ -200,6 +209,19 @@ nav span {
     color: white;
     text-align: center;
     font-size: 1rem;
+    transition-property: all;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+}
+
+#start-here:hover {
+    transform: scale(1.1);
+    background-color:  rgb(83, 120, 150);
+}
+
+#start-here:active {
+    transform: scale(1);
+    background-color: black;
 }
 
 /* Mobile */
@@ -266,12 +288,25 @@ nav span {
     padding-top: 1rem;
 }
 
+.info-panel-container a {
+    background-color: white;
+    transition-property: background-color;
+}
+
 .info-panel {
     display: flex;
     align-items: center;
     padding: 1rem;
     border-bottom: .5px solid lightgrey;
+    transition-property: background-color;
+    transition-duration: 400ms;
+    transition-timing-function: ease-in;
 }
+
+.info-panel:hover {
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
 
 .info-panel .text-container {
     flex:1 1 65%;
@@ -292,14 +327,28 @@ nav span {
     padding: .5rem 0;
 }
 
-.info-panel .text-container a {
+/* .info-panel .text-container a {
+    font-size: .775rem;
+    color: rgb(0, 140, 255);
+    opacity: 1;
+    transition-property: color;
+    transition-property: font-weight;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+} */
+
+.info-panel .text-container h5 {
     font-size: .775rem;
     color: rgb(0, 140, 255);
 }
 
-/* #guest-lecture {
-    background-color: lightgrey;
-} */
+.info-panel .text-container a:visited {
+    color: lightgray;
+}
+
+.info-panel .text-container a:hover {
+    font-weight: 900;
+}
 
 /* Mobile */
 
@@ -359,17 +408,27 @@ nav span {
 
 .courses {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0 3.5rem 2rem 3.5rem;
-    width: 100%;
-    height: auto;
+    flex: 0 0 100%;
+    padding-bottom: 2rem;
 }
 
 .courses-container {
     width: 17rem;
     margin: 1rem;
     background-color: white;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
 }
+
+.courses-container:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 0.15rem rgb(83, 120, 150);
+}
+
+
 
 .courses-container img {
     width: 100%;
