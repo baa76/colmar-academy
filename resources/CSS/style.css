@@ -514,6 +514,7 @@ nav a:hover {
   .exhibit .desktop {
     display: none;
   }
+
   .exhibit.site-container {
     width: auto;
   }
@@ -543,8 +544,4 @@ nav a:hover {
       width: 100%;
   }
 
-  /* .footer-flex-container {
-    flex: 0 0 100%;
-    justify-content: flex-start;
-} */
 }
