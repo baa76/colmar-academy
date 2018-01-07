@@ -85,6 +85,11 @@ h3 {
     transition-timing-function: ease-in;
 }
 
+.info-panel .text-container {
+    flex:1 1 65%;
+    padding-left: 1rem;
+}
+
 .info-panel .image-container {
     flex: 0 0 35%;
 }
@@ -108,11 +113,9 @@ h3 {
 
 @media only screen and (min-width:760px) {
 
-    .info-panel .text-container {
-        flex:1 1 65%;
-        padding-left: 1rem;
+    .info-panel:hover {
+        background-color: rgba(211, 211, 211, 0.5);
     }
-
 }
 
 /* Header Section */
