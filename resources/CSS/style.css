@@ -2,541 +2,549 @@
 
 /* Open Sans normal and bold */
 
-  @font-face {
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 400;
-      src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format('woff2');
-      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-    }
-    @font-face {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 600;
-        src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-    }
-    @font-face {
-        font-family: 'Open Sans';
-        font-style: normal;
-        font-weight: 700;
-        src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-    }
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"),
+    url(https://fonts.gstatic.com/s/opensans/v15/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2)
+      format("woff2");
+  unicode-range: U+0000-00ff, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
+    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
+    url(https://fonts.gstatic.com/s/opensans/v15/MTP_ySUJH_bn48VBG8sNShampu5_7CjHW5spxoeN3Vs.woff2)
+      format("woff2");
+  unicode-range: U+0000-00ff, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
+    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+    url(https://fonts.gstatic.com/s/opensans/v15/k3k702ZOKiLJc3WVjuplzBampu5_7CjHW5spxoeN3Vs.woff2)
+      format("woff2");
+  unicode-range: U+0000-00ff, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
+    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2212, U+2215;
+}
 
-    /* Source Sans Pro bold and semi-bold */
+/* Source Sans Pro bold and semi-bold */
 
-    @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 600;
-        src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGMzFoXZ-Kj537nB_-9jJhlA.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-    }
-    @font-face {
-        font-family: 'Source Sans Pro';
-        font-style: normal;
-        font-weight: 700;
-        src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2) format('woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
-    }
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Source Sans Pro SemiBold"), local("SourceSansPro-SemiBold"),
+    url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGMzFoXZ-Kj537nB_-9jJhlA.woff2)
+      format("woff2");
+  unicode-range: U+0000-00ff, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
+    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2212, U+2215;
+}
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Source Sans Pro Bold"), local("SourceSansPro-Bold"),
+    url(https://fonts.gstatic.com/s/sourcesanspro/v11/toadOcfmlt9b38dHJxOBGJkF8H8ye47wsfpWywda8og.woff2)
+      format("woff2");
+  unicode-range: U+0000-00ff, U+0131, U+0152-0153, U+02bb-02bc, U+02c6, U+02da,
+    U+02dc, U+2000-206f, U+2074, U+20ac, U+2122, U+2212, U+2215;
+}
 
 /* Universal Styles */
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 body {
-    font-family: "Open Sans";
-    font-weight: 400;
-    line-height: 1.4;
+  font-family: "Open Sans";
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 h3 {
-    font-weight: 600;
-    font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .main-site-container {
-    position: relative;
-    top: 4rem;
+  position: relative;
+  top: 4rem;
 }
 
 .site-container {
-    width: 1024px;
-    margin: auto;
+  width: 1024px;
+  margin: auto;
 }
 
 .mobile {
-    display: none;
+  display: none;
 }
 .info-panel-container {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .info-panel {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    border-bottom: .5px solid lightgrey;
-    transition-property: background-color;
-    transition-duration: 400ms;
-    transition-timing-function: ease-in;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 0.5px solid lightgrey;
+  transition-property: background-color;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in;
 }
 
 .info-panel .text-container {
-    flex:1 1 65%;
-    padding-left: 1rem;
+  flex: 1 1 65%;
+  padding-left: 1rem;
 }
 
 .info-panel .image-container {
-    flex: 0 0 35%;
+  flex: 0 0 35%;
 }
 
 .info-panel img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .info-panel .text-container p {
-    font-size: .775rem;
-    padding: .5rem 0;
+  font-size: 0.775rem;
+  padding: 0.5rem 0;
 }
 
 .info-panel .text-container h5 {
-    font-size: .775rem;
-    color: rgb(0, 140, 255);
+  font-size: 0.775rem;
+  color: rgb(0, 140, 255);
 }
 
 /* Desktop only transitions */
 
-@media only screen and (min-width:760px) {
-
-    .info-panel:hover {
-        background-color: rgba(211, 211, 211, 0.5);
-    }
+@media only screen and (min-width: 760px) {
+  .info-panel:hover {
+    background-color: rgba(211, 211, 211, 0.5);
+  }
 }
 
 /* Header Section */
 
 header {
-    height: 64px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
+  height: 64px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
 }
 
 header .desktop {
-    max-width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo-container {
-    height: 2rem;
-    display: flex;
-    align-items: center;
-    padding-left: 1.5rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
 }
 
 #logo-img-container {
-    height: 100%;
-    width: auto;
+  height: 100%;
+  width: auto;
 }
 
 #logo-img-container img {
-    height: 120%;
-    width: auto;
+  height: 120%;
+  width: auto;
 }
 
 .logo-text {
-    font-family: "Source Sans Pro";
-    font-size: 1.25rem;
+  font-family: "Source Sans Pro";
+  font-size: 1.25rem;
 }
 
 #colmar {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 #academy {
-    color: gray;
+  color: gray;
 }
 
 .desktop nav {
-    padding-right: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 nav span {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 nav a {
-    transition-property: all;
-    transition-duration: 300ms;
+  transition-property: all;
+  transition-duration: 300ms;
 }
 
 nav a:hover {
-    color:  rgb(83, 120, 150);
+  color: rgb(83, 120, 150);
 }
-
 
 /* Mobile */
 
 @media only screen and (max-width: 760px) {
+  .desktop.site-container {
+    display: none;
+  }
 
-    .desktop.site-container {
-        display: none;
-    }
+  header .mobile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    header .mobile {
-        height:100%;
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .mobile-logo {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-
+  .mobile-logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 /* Banner Section */
 
 .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
 }
 
 .banner .image-container {
-    flex: 0 0 60%;
-    padding: 2rem 1.5rem;
+  flex: 0 0 60%;
+  padding: 2rem 1.5rem;
 }
 
 .banner img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .rhs-container {
-    margin-right: 3rem;
-    padding: 2rem 1rem;
+  margin-right: 3rem;
+  padding: 2rem 1rem;
 }
 
 .rhs-container h1 {
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.25;
-    margin-bottom: 2rem;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 2rem;
 }
 
 .rhs-container h3 {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 #start-here {
-    display: flex;
-    justify-content: center;
-    background-color: black;
-    width: 100%;
-    padding: 0.75rem 0;
-    color: white;
-    text-align: center;
-    font-size: 1rem;
-    transition-property: all;
-    transition-duration: 500ms;
-    transition-timing-function: ease;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  padding: 0.75rem 0;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
 }
 
 /* Desktop only transitions */
 
+@media only screen and (min-width: 760px) {
+  #start-here:hover {
+    transform: scale(1.1);
+    background-color: rgb(83, 120, 150);
+  }
 
-@media only screen and (min-width:760px) {
-
-    #start-here:hover {
-        transform: scale(1.1);
-        background-color:  rgb(83, 120, 150);
-    }
-
-    #start-here:active {
-        transform: scale(1);
-        background-color: black;
-    }
-
+  #start-here:active {
+    transform: scale(1);
+    background-color: black;
+  }
 }
 
 /* Mobile */
 
-@media only screen and (max-width:760px) {
-    .banner.site-container {
-        width:100%;
-        display: flex;
-        flex-direction: column;
-    }
+@media only screen and (max-width: 760px) {
+  .banner.site-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .banner img {
-        width: 100%;
-        height: auto;
-        padding: 0;
+  .banner img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
 
-    }
+  #start-here {
+    background-color: hsl(0, 0%, 40%);
+    width: 100%;
+    font-weight: 600;
+  }
 
-    #start-here {
-        background-color: hsl(0, 0%, 40%);
-        width: 100%;
-        font-weight: 600;
-    }
-
-    .rhs-container {
-        margin-right: 0;
-    }
+  .rhs-container {
+    margin-right: 0;
+  }
 }
 
 /* Information Section*/
 
 .information {
-    display: flex;
+  display: flex;
 }
 
 .main-image-container {
-    flex: 0 0 60%;
-    padding: 2rem 1.5rem;
+  flex: 0 0 60%;
+  padding: 2rem 1.5rem;
 }
 
 .main-image-container img {
-    width: 100%;
-    height: auto;
-    padding-bottom: 2rem;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
 }
 
 .main-image-container h1 {
-    font-weight: 900;
-    font-size: 1.875rem;
+  font-weight: 900;
+  font-size: 1.875rem;
 }
 
 .main-image-container p {
-    font-size: .875rem;
-    padding-top: 1.5rem;
+  font-size: 0.875rem;
+  padding-top: 1.5rem;
 }
 
 .main-image-container h5 {
-    font-size: .65rem;
-    padding-top: 1.5rem;
-    font-weight: 600;
+  font-size: 0.65rem;
+  padding-top: 1.5rem;
+  font-weight: 600;
 }
-
 
 /* Mobile */
 
-@media only screen and (max-width:760px) {
+@media only screen and (max-width: 760px) {
+  .desktop.main-image-container {
+    display: none;
+  }
 
-    .desktop.main-image-container {
-        display: none;
-    }
+  .information.site-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .information.site-container {
-        width:100%;
-        display: flex;
-        flex-direction: column;
-    }
+  .info-panel {
+    display: block;
+    padding: 1rem;
+  }
 
-    .info-panel {
-        display: block;
-        padding: 1rem;
-    }
+  .info-panel-container {
+    width: 100%;
+    padding: 0;
+  }
 
-    .info-panel-container {
-        width: 100%;
-        padding: 0;
-    }
+  .info-panel .desktop.image-container {
+    display: none;
+  }
 
-    .info-panel .desktop.image-container {
-        display: none;
-    }
+  .info-panel .mobile.image-container {
+    display: block;
+    width: 100%;
+    padding: 0;
+  }
 
-    .info-panel .mobile.image-container {
-        display: block;
-        width: 100%;
-        padding: 0;
-    }
-
-    .info-panel .text-container {
-        width: auto;
-        padding: 1rem;
-    }
+  .info-panel .text-container {
+    width: auto;
+    padding: 1rem;
+  }
 }
-
-
 
 /* Learning Section */
 
 .learning {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
 .learning h1 {
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.25;
-    padding: 2rem 0 1rem 0;
-    text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.25;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
 }
 
 .courses {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex: 0 0 100%;
-    padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  padding-bottom: 2rem;
 }
 
 .courses-container {
-    width: 17rem;
-    margin: 1rem;
-    background-color: white;
-    transition-property: all;
-    transition-duration: 250ms;
-    transition-timing-function: ease-in-out;
+  width: 17rem;
+  margin: 1rem;
+  background-color: white;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
 }
 
 .courses-container img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .courses-container .text-container {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .courses-container .text-container h3 {
-    font-weight: 600;
-    font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 .courses-container .text-container p {
-    font-size: .775rem;
-    padding: .5rem 0;
+  font-size: 0.775rem;
+  padding: 0.5rem 0;
 }
 
 /* Desktop only transitions */
 
-@media only screen and (min-width:760px) {
-
-    .courses-container:hover {
-        transform: scale(1.04);
-        box-shadow: 0 0 0 0.15rem rgb(83, 120, 150);
-    }
-
+@media only screen and (min-width: 760px) {
+  .courses-container:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 0 0.15rem rgb(83, 120, 150);
+  }
 }
 
 /* Mobile */
 
-@media only screen and (max-width:760px) {
+@media only screen and (max-width: 760px) {
+  .learning.site-container {
+    width: auto;
+    padding: 2rem 0;
+    background-color: white;
+  }
 
-    .learning.site-container {
-        width: auto;
-        padding: 2rem 0;
-        background-color: white;
-    }
+  .learning h1 {
+    padding: 0 0 0.75rem 0;
+  }
 
-    .learning h1 {
-        padding: 0 0 .75rem 0;
-    }
+  .courses {
+    display: block;
+    padding: 0;
+  }
 
-    .courses {
-        display: block;
-        padding: 0;
-    }
+  .courses-container .desktop {
+    display: none;
+  }
 
-    .courses-container .desktop {
-        display: none;
-    }
+  .courses-container .text-container {
+    background-color: lightgrey;
+    padding: 0;
+  }
 
-    .courses-container .text-container {
-        background-color: lightgrey;
-        padding: 0;
-    }
-
-    .courses-container .text-container h3 {
-        padding: 1rem;
-    }
-
+  .courses-container .text-container h3 {
+    padding: 1rem;
+  }
 }
 
 /* Exhibit Section */
 
 .exhibit h1 {
-    font-weight: 700;
-    font-size: 2rem;
-    line-height: 1.25;
-    padding: 2rem 0 1rem 0;
-    text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.25;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
 }
 
 .content-container {
-    display: flex;
+  display: flex;
 }
 
 .video-container {
-    flex: 0 0 60%;
-    padding: 0 1.5rem 2rem 1.5rem;
+  flex: 0 0 60%;
+  padding: 0 1.5rem 2rem 1.5rem;
 }
 
 .video-container video {
-    width: 100%;
-    height: auto;
-    padding: 1rem 0;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
 }
 
 .video-container p {
-    font-size: .875rem;
-    padding-top: 1rem;
+  font-size: 0.875rem;
+  padding-top: 1rem;
 }
 
 .content-container .info-panel-container {
-    padding-top: 0;
+  padding-top: 0;
 }
 
-@media only screen and (max-width:760px) {
-    .exhibit .desktop {
-        display: none;
-    }
-    .exhibit.site-container {
-        width: auto;
-    }
+@media only screen and (max-width: 760px) {
+  .exhibit .desktop {
+    display: none;
+  }
+  .exhibit.site-container {
+    width: auto;
+  }
 
-    .video-container {
-        flex: 0 0 100%;
-        padding: 0 0 0.5rem 0rem;
-    }
+  .video-container {
+    flex: 0 0 100%;
+    padding: 0 0 0.5rem 0rem;
+  }
 }
 
 /* Footer Section */
 
 .footer-flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: .75rem;
-    padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  padding: 1rem 1.5rem;
 }
 
-@media screen only and (max-width: 760px) {
-    .desktop {
-        display: none;
-    }
+@media only screen and (max-width: 760px) {
+  .desktop {
+    display: none;
+  }
+
+  .site-container {
+      width: 100%;
+  }
+
+  /* .footer-flex-container {
+    flex: 0 0 100%;
+    justify-content: flex-start;
+} */
 }
